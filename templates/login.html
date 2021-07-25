@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first webste html!</title>
+    <meta charset="utf-8" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Flex in하기</h1>
+    <form action="{{url_for('login')}}" method="POST">
+      <label for="username">이름</label>
+      <input type="text" required placeholder="username" name="username" />
+      <label for="password">비밀번호</label>
+      <input type="number" required placeholder="password" name="password" />
+      <input type="submit" name="login button" value="제출"/>
+    </form>
+  </body>
+</html>

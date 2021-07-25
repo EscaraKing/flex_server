@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first webste html!</title>
+    <meta charset="utf-8" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  </head>
+
+  <body>
+      <h1>private html {{value[0]}}</h1>
+      <button name="gotoinput" onclick="location.href='{{url_for('main')}}'">
+      메인화면으로
+      </button>
+
+  </body>
+</html>

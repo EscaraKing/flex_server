@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first webste html!</title>
+    <meta charset="utf-8" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <label for="name">이름</label>
+        <input type="text" required placeholder="이름", name="name/>
+        <label for="price">플렉스 금액</label>
+        <input type="number" required placeholder="플렉스 금액" name="price" />
+        <label for="date">플렉스 날짜</label>
+        <input
+          type="date"
+          required
+          value="2021-07-25"
+          min="2021-01-01"
+          max="2021-12-31"
+          name="date"
+        />
+        <label for="wallet_now">현재 통장에 남아있는 돈</label>
+        <input
+          type="number"
+          required
+          placeholder="현재 통장 잔고"
+          name="wallet_now"
+        />
+        <label for="wallet_future">플렉스 후 남기고 싶은 통장 잔고</label>
+        <input
+          type="number"
+          required
+          placeholder="플렉스 후 잔고"
+          name="wallet_future"
+        />
+        <label for="income">플렉스 날까지 예상되는 수입</label>
+        <input type="number" placeholder="예상수입" name="income" required />
+        <input type="submit" value="Send Request" />
+      </form>
+    </div>
+    <div></div>
+  </body>
+</html>
